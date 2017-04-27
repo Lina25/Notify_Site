@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("../fonts/HelveticaNeue/HelveticaNeue.eot?#iefix")format("embedded-opentype"), url("../fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueIt";
+  src: url("../fonts/HelveticaNeueIt/HelveticaNeueIt.eot");
+  src: url("../fonts/HelveticaNeueIt/HelveticaNeueIt.eot?#iefix")format("embedded-opentype"), url("../fonts/HelveticaNeueIt/HelveticaNeueIt.woff") format("woff"), url("../fonts/HelveticaNeueIt/HelveticaNeueIt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,16 +22,48 @@ body {
   height: 100%;
 }
 
-.header {
-  display: inline-block;
-  min-height: 100%;
-  width: 100%;
-  background: url("../img/header1.jpg");
-  background-size: auto 100%;
+@media (max-width: 768px) {
+  .header {
+  min-height:350px;
+  max-width:100%;
+  background: url("../img/bg_mobile.jpg");
   background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center center;
   border-top: 7px solid #2ecc71;
   color: #fff;
-  font-family: Verdana, sans-serif;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 24px;
+}
+  .video {
+    display: none;
+  }
+  .form-search {
+    margin-bottom: 50px;
+    width: 200px;
+    margin-left: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .notified-p1, .notified-p2 {
+    margin-left: 0px;
+  }
+}
+
+.header {
+  min-height:750px;
+  max-width:100%;
+  background: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center center;
+  
+  border-top: 7px solid #2ecc71;
+  color: #fff;
+  font-family: 'HelveticaNeue', sans-serif;
   font-size: 24px;
 }
 
@@ -25,15 +72,6 @@ body {
   font-size: 52px;
   margin-top: 150px;
   margin-bottom: 50px;
-}
-
-.hand {
-  margin-top: -352px;
-  margin-left: 640px;
-}
-
-.pull-right {
-  float: right !important;
 }
 
 .circle-big {
@@ -91,14 +129,14 @@ body {
 }
 
 .features-p1 {
-  font-family: Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
 }
 
 .features-p2 {
-  font-family: Verdana, sans-serif;
+  font-family: 'HelveticaNeue', sans-serif;
   font-size: 12px;
   color: #979595;
 }
@@ -112,16 +150,16 @@ body {
 }
 
 .notified-p1 {
-  font-family: Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  font-weight: bold;
   margin-top: 50px;
   margin-left: 90px;
 }
 
 .notified-p2 {
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 16px;
+  color:#a1a1a1;
   margin-left: 90px;
 }
 
@@ -136,15 +174,14 @@ body {
 
 .testimonials1 {
   color: #979595;
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-family: 'HelveticaNeueIt', sans-serif;
+  font-size: 16px;
   margin-top: 30px;
 }
 
 .testimonials2 {
-  font-family: Verdana, sans-serif;
+  font-family: 'HelveticaNeue', sans-serif;
   font-size: 18px;
-  font-weight: bold;
   margin-top: 20px;
 }
 
@@ -153,16 +190,15 @@ body {
 }
 
 .get_in_touch1 {
-  font-family: Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
   margin-top: 30px;
 }
 
 .get_in_touch2 {
   color: #979595;
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -200,17 +236,33 @@ body {
   width: 15%;
   margin: auto;
 }
+.navbar {
+  background-color: #e3e3e3;
+  margin-top: 50px;
+  border-radius:0px;
+}
+
+.navbar-nav > li > a {
+  text-decoration: none;
+  padding-left: 150px;
+  color: #a19696;
+
+}
+
+/*
 
 .footer {
-  /*  text-decoration:none;*/
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 450px;
   background-color: #e3e3e3;
 }
+.footer li {
+  display: inline-block;
+}
 
 .footer-link {
   margin-left: 50px;
   color: #979595;
-}
+}*/
