@@ -21,37 +21,6 @@ html,
 body {
   height: 100%;
 }
-
-@media (max-width: 768px) {
-  .header {
-  min-height:350px;
-  max-width:100%;
-  background: url("../img/bg_mobile.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center center;
-  border-top: 7px solid #2ecc71;
-  color: #fff;
-  font-family: 'HelveticaNeue', sans-serif;
-  font-size: 24px;
-}
-  .video {
-    display: none;
-  }
-  .form-search {
-    margin-bottom: 50px;
-    width: 200px;
-    margin-left: 0;
-  }
-  .navbar {
-    display: none;
-  }
-  .notified-p1, .notified-p2 {
-    margin-left: 0px;
-  }
-}
-
 .header {
   min-height:750px;
   max-width:100%;
@@ -248,6 +217,36 @@ body {
   color: #a19696;
 
 }
+@media (max-width: 768px) {
+  .header {
+  min-height:350px;
+  max-width:100%;
+  background: url("../img/bg_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center center;
+  border-top: 7px solid #2ecc71;
+  color: #fff;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 24px;
+}
+  .video {
+    display: none;
+  }
+  .form-search {
+    margin-bottom: 50px;
+    width: 200px;
+    margin-left: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .notified-p1, .notified-p2 {
+    margin-left: 0px;
+  }
+}
+
 
 /*
 
